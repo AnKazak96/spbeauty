@@ -4,18 +4,19 @@ import IconOnlyButton from '../../../../Components/IconOnlyButton';
 
 const WrapperInput = styled.div`
     position:relative;
-    width: 216px;
+    width: 217px;
 `;
 
 const Input = styled.input`
     outline: none;
-    border-radius: 0px;
-    border: solid #152842 1px;
-    background-color: #D9E2EF;
+    border-radius: 24px;
+    border: solid #E2E8F0 1px;
+    background-color: #F8FAFC;
     color: #152842;
     width: 100%;
     &:hover {
-        background: linear-gradient(180deg, #DFEAF1 0%, #CFDDE8 100%);
+        background: rgba(248,250,252, .8);
+        border: solid #CCE2E8F0 1px;
     }
     &:focus {
         background: white;
@@ -23,18 +24,21 @@ const Input = styled.input`
 `;
 
 const SearchIconWrapper = styled.div`
-    background-color: #4B759E;
+    background-color: #00000000;
     position: absolute;
     box-sizing:border-box;
-    right: 0px;  /* Здесь можно добавить отступ от правого края, чтобы сдвинуть иконку левее */
+    right: 16px;  /* Здесь можно добавить отступ от правого края, чтобы сдвинуть иконку левее */
     top:50%;
     transform: translateY(-50%);
+    &:hover {
+        color: #F8FAFC;
+    }
 `;
 
 function SearchField() {
     return (
         <WrapperInput className='d-inline-flex'>  {/* Устанавливает ширину поля и включает относительное положение */}
-            <Input className='p-2' placeholder='Найти на странице...'/>
+            <Input className='py-2 px-3' placeholder='Найти'/> 
             <SearchIconWrapper className='p-2'>  {/* Устанавливает абсолютное положение внутри поля ввода */}
                 <IconOnlyButton icon={<SearchIcon/>}/>
             </SearchIconWrapper>
