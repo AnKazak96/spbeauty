@@ -7,13 +7,13 @@ body {
 .large-title {
   font-weight: 700;
   font-size: 28px;
-  line-height: 28px;
+  line-height: 34px;
 }
 
 .title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 18px;
+  line-height: 24px;
 }
 
 .text-lg {
@@ -25,7 +25,7 @@ body {
 .text-md {
   font-weight: 400;
   font-size: 15px;
-  line-height: 17px;
+  line-height: 18px;
 }
 
 .text-rg-bd {
@@ -42,7 +42,7 @@ input,
 .text-rg {
   font-weight: 400;
   font-size: 15px;
-  line-height: 16px;
+  line-height: 18px;
 }
 
 .caption {
