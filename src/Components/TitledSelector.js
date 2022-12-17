@@ -16,15 +16,20 @@ const Select = styled.select`
     }
 `;
 
+const TitleTextWrapper = styled.text`
+    color: #94A3B8;
+`;
+
 function TitledSelector({title, options}) {
     const Title = title === undefined ? 
         (<div className='caption'></div>) : 
         (<div className='caption'>
             {title}
         </div>);
+
     return (
         <div className='d-flex flex-column gap-2'>
-            {Title}
+            <TitleTextWrapper>{Title}</TitleTextWrapper>
             <Select className='py-2 px-3'>
                 {options.map(optionName => {
                     return (
