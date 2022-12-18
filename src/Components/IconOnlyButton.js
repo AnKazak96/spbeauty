@@ -3,8 +3,9 @@ import styled from "styled-components";
 
 function IconOnlyButton({icon}) {
     const Container = styled.div`
+        color: #94A3B8;
         &:hover {
-            opacity: 0.8;
+            color: #64748B;
         }
     `;
     return (

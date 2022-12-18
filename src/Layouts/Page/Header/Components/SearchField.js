@@ -5,6 +5,9 @@ import IconOnlyButton from '../../../../Components/IconOnlyButton';
 const WrapperInput = styled.div`
     position:relative;
     width: 217px;
+    &:hover {
+        opacity: 0.8;
+    }
 `;
 
 const Input = styled.input`
@@ -14,10 +17,6 @@ const Input = styled.input`
     background-color: #F8FAFC;
     color: #152842;
     width: 100%;
-    &:hover {
-        background: rgba(248,250,252, .8);
-        border: solid #CCE2E8F0 1px;
-    }
     &:focus {
         background: white;
     }
@@ -30,9 +29,6 @@ const SearchIconWrapper = styled.div`
     right: 16px;  /* Здесь можно добавить отступ от правого края, чтобы сдвинуть иконку левее */
     top:50%;
     transform: translateY(-50%);
-    &:hover {
-        color: #F8FAFC;
-    }
 `;
 
 function SearchField() {

@@ -8,7 +8,7 @@ const Container = styled.div`
 
 function Addresses() {
     return (
-        <div className='d-inline-flex justify-content-between flex-column gap-4 border rounded-2 p-4 col'>
+        <div className='d-inline-flex justify-content-between flex-column gap-4 border rounded-2 p-4 col ms-5'>
             <div className='d-flex flex-column gap-4'>
                 <div className='title'>Адреса заведений</div>
                 <div className='d-inline-flex flex-column gap-2'>
