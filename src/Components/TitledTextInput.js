@@ -5,14 +5,17 @@ const Input = styled.input`
     border-radius: 24px;
     border: solid #E2E8F0 1px;
     background-color: #F8FAFC;
-    color: #0F172A;
-    &:hover {
-        background-color: #D9E2EFB8;
-    }
+    color: #94A3B8;
 `;
 
 const TitleTextWrapper = styled.text`
     color: #94A3B8;
+`;
+
+const TitledTextInputWrapper = styled.div`
+    &:hover {
+        opacity: 0.8;
+    }
 `;
 
 function TitledTextInput({title, def}) {
@@ -22,10 +25,10 @@ function TitledTextInput({title, def}) {
         {title}
     </div>);
     return (
-        <div className='d-flex flex-column gap-2'>
+        <TitledTextInputWrapper className='d-flex flex-column gap-2'>
             <TitleTextWrapper>{Title}</TitleTextWrapper>
             <Input className='py-2 px-3' defaultValue={def} ></Input>
-        </div>
+        </TitledTextInputWrapper>
     );
 }
 
