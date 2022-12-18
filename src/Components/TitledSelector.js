@@ -10,14 +10,17 @@ const Select = styled.select`
     border-radius: 24px;
     border: solid #E2E8F0 1px;
     background-color: #F8FAFC;
-    color: #0F172A;
-    &:hover {
-        background-color: #D9E2EFB8;
-    }
+    color: #94A3B8;
 `;
 
 const TitleTextWrapper = styled.text`
     color: #94A3B8;
+`;
+
+const TitledSelectorWrapper = styled.div`
+    &:hover {
+        opacity: 0.8;
+    }
 `;
 
 function TitledSelector({title, options}) {
@@ -28,7 +31,7 @@ function TitledSelector({title, options}) {
         </div>);
 
     return (
-        <div className='d-flex flex-column gap-2'>
+        <TitledSelectorWrapper className='d-flex flex-column gap-2'>
             <TitleTextWrapper>{Title}</TitleTextWrapper>
             <Select className='py-2 px-3'>
                 {options.map(optionName => {
@@ -37,7 +40,7 @@ function TitledSelector({title, options}) {
                     );
                 })}
             </Select>
-        </div>
+        </TitledSelectorWrapper>
     );
 }
 
